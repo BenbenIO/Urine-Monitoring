@@ -1,0 +1,37 @@
+menu "Configuration default"
+
+config WIFI_SSID
+    string "Wifi SSID"
+	default "BenPC"
+
+config WIFI_PASSWORD
+    string "Wifi password"
+	default "666AAA666"
+
+config LED_G
+    int "Turn LED green"
+	range 0 34
+	default 18
+
+config LED_R
+    int "Turn LED red"
+	range 0 34
+	default 23
+	
+config LED_B
+    int "Turn LED blue"
+	range 0 34
+	default 19
+	
+config LED_ABS
+    int "Led for absorbance measurment"
+	range 0 34
+	default 5
+
+config 33_COND
+    int "Pin for conductivity measurment"
+	range 0 34
+	default 17
+	
+endmenu
+
